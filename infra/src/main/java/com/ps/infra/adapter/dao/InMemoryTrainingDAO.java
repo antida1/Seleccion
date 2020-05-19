@@ -6,6 +6,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 @Repository
 public class InMemoryTrainingDAO implements TrainingDAO {
@@ -22,5 +23,12 @@ public class InMemoryTrainingDAO implements TrainingDAO {
 
         return dtos;
     }
+
+	@Override
+	public TrainingDTO getById(long id) {
+		
+		TrainingDTO dto = new TrainingDTO("Hello Word");
+		return dto;
+	}
 
 }

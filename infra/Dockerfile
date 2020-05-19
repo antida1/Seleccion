@@ -1,7 +1,7 @@
 FROM openjdk:11
 
-MAINTAINER lbertel luisbertel@personalsoft.com.co
+MAINTAINER ldavid ldavid@personalsoft.com.co
 
 RUN mkdir /app
-ADD ./build/libs/formacion-server-1.0.jar /app/formacion-server-1.0.jar
-ENTRYPOINT ["java","-jar","/app/formacion-server-1.0.jar"]
+ADD ./build/libs/seleccion-1.0.jar /app/seleccion-1.0.jar
+ENTRYPOINT ["java","-jar","/app/seleccion-1.0.jar"]

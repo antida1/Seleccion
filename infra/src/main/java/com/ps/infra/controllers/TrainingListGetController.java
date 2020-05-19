@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -20,12 +21,12 @@ public final class TrainingListGetController {
         this.handler = handler;
     }
 
-    @GetMapping({"/training", "/training/list"})
+    @GetMapping("/training/list")
     public ResponseEntity<List<TrainingDTO>> allTraining(){
 
         
 
-        List<TrainingDTO> trainings = this.handler.execute();
+        List<TrainingDTO> trainings = new ArrayList(); //this.handler.execute();
 
         return new ResponseEntity<>(trainings, HttpStatus.OK);
     }

@@ -1,4 +1,4 @@
-rootProject.name = 'formacion'
+rootProject.name = 'seleccion'
 
 include 'infra'
 include 'app'

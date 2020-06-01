@@ -4,7 +4,7 @@ import java.util.UUID;
 
 public class Training {
 
-    private final UUID id;
+	private final UUID id;
     private final String name;
     private final Integer duration;
 

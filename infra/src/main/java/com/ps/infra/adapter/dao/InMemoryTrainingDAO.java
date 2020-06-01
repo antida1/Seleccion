@@ -1,6 +1,7 @@
 package com.ps.infra.adapter.dao;
 
 import com.ps.domain.model.dto.TrainingDTO;
+import com.ps.domain.model.entity.Training;
 import com.ps.domain.port.dao.TrainingDAO;
 import org.springframework.stereotype.Repository;
 
@@ -29,6 +30,12 @@ public class InMemoryTrainingDAO implements TrainingDAO {
 		
 		TrainingDTO dto = new TrainingDTO("Hello Word");
 		return dto;
+	}
+
+	@Override
+	public Training save(UUID id, String name, Integer duration) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
